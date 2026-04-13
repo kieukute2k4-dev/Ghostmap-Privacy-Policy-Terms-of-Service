@@ -20,45 +20,142 @@
             --danger: #ff6b6b;
         }
 
-        * { box-sizing: border-box; }
-
-        html, body {
-            margin: 0; padding: 0;
-            background: radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 42%), linear-gradient(180deg, #0d1218 0%, var(--bg) 100%);
-            color: var(--text); font-family: "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.65;
+        * {
+            box-sizing: border-box;
         }
 
-        body { padding: 32px 18px 64px; }
-        .wrap { max-width: 920px; margin: 0 auto; }
-        .hero, .section {
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background:
+                radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 42%),
+                linear-gradient(180deg, #0d1218 0%, var(--bg) 100%);
+            color: var(--text);
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.65;
+        }
+
+        body {
+            padding: 32px 18px 64px;
+        }
+
+        .wrap {
+            max-width: 920px;
+            margin: 0 auto;
+        }
+
+        .hero,
+        .section {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
-            border: 1px solid var(--line); border-radius: 20px; padding: 24px; backdrop-filter: blur(8px);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 24px;
+            backdrop-filter: blur(8px);
         }
-        .hero { margin-bottom: 18px; }
-        .section { margin-bottom: 14px; }
-        h1, h2, h3 { margin: 0 0 12px; line-height: 1.2; }
-        h1 { font-size: clamp(2rem, 3.8vw, 3rem); letter-spacing: -0.03em; }
-        h2 { font-size: 1.2rem; color: var(--accent); }
-        h3 { font-size: 1rem; color: #d8e7f8; }
-        p, li { color: var(--muted); margin: 0 0 10px; }
-        ul { margin: 10px 0 0 20px; padding: 0; }
-        .meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
-        .chip { display: inline-flex; align-items: center; min-height: 34px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel-2); color: #d7e8fa; font-size: 0.92rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 14px; }
-        .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
-        .note { border-left: 3px solid var(--accent); padding-left: 12px; }
-        .placeholder { color: #ffe08f; font-weight: 600; }
-        a { color: var(--accent); }
-        code { font-family: Consolas, "Courier New", monospace; background: rgba(255, 255, 255, 0.06); padding: 1px 6px; border-radius: 6px; color: #f2f7fd; }
+
+        .hero {
+            margin-bottom: 18px;
+        }
+
+        .section {
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 3.8vw, 3rem);
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: #d8e7f8;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+            margin: 0 0 10px;
+        }
+
+        ul {
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 14px 0 0;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            min-height: 34px;
+            padding: 0 12px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--panel-2);
+            color: #d7e8fa;
+            font-size: 0.92rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 16px;
+        }
+
+        .note {
+            border-left: 3px solid var(--accent);
+            padding-left: 12px;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 1px 6px;
+            border-radius: 6px;
+            color: #f2f7fd;
+        }
     </style>
 </head>
 <body>
     <div class="wrap">
         <section class="hero">
             <h1>GhostMap Terms of Service</h1>
-            <p>These Terms of Service govern your use of GhostMap, a paid Android application distributed through Google Play.</p>
+            <p>
+                These Terms of Service govern your use of GhostMap, a paid Android application
+                distributed through Google Play.
+            </p>
             <div class="meta">
-                <span class="chip">Last updated: April 12, 2026</span>
+                <span class="chip">Last updated: April 13, 2026</span>
                 <span class="chip">App: GhostMap</span>
                 <span class="chip">Distribution: Google Play</span>
                 <span class="chip">Business model: Paid app</span>
@@ -67,28 +164,51 @@
 
         <section class="section">
             <h2>1. Developer Information</h2>
-            <p>These Terms apply to GhostMap published by <span class="placeholder">BEAT</span>.</p>
+            <p>
+                These Terms apply to GhostMap published by <strong>BEAT</strong>.
+            </p>
             <div class="grid">
-                <div class="card"><h3>Developer</h3><p><span class="placeholder">BEAT</span></p></div>
-                <div class="card"><h3>Support Email</h3><p><span class="placeholder">kieukute2k4@gmail.com</span></p></div>
-                <div class="card"><h3>Region</h3><p><span class="placeholder">VIETNAM</span></p></div>
+                <div class="card">
+                    <h3>Developer</h3>
+                    <p>BEAT</p>
+                </div>
+                <div class="card">
+                    <h3>Support Email</h3>
+                    <p>kieukute2k4@gmail.com</p>
+                </div>
+                <div class="card">
+                    <h3>Region</h3>
+                    <p>VIETNAM</p>
+                </div>
             </div>
         </section>
 
         <section class="section">
             <h2>2. Acceptance of These Terms</h2>
-            <p>By downloading, installing, purchasing, accessing, or using GhostMap, you agree to be bound by these Terms of Service and the GhostMap Privacy Policy.</p>
-            <p>If you do not agree to these Terms, do not use GhostMap.</p>
+            <p>
+                By downloading, installing, purchasing, accessing, or using GhostMap, you agree to be
+                bound by these Terms of Service and the GhostMap Privacy Policy.
+            </p>
+            <p>
+                If you do not agree to these Terms, do not use GhostMap.
+            </p>
         </section>
 
         <section class="section">
             <h2>3. License</h2>
-            <p>Subject to these Terms and your compliance with Google Play purchase terms, <span class="placeholder">BEAT</span> grants you a limited, non-exclusive, non-transferable, revocable license to install and use GhostMap on devices you own or control, solely for personal lawful use.</p>
+            <p>
+                Subject to these Terms and your compliance with Google Play purchase terms,
+                <strong>BEAT</strong> grants you a limited, non-exclusive,
+                non-transferable, revocable license to install and use GhostMap on devices you own
+                or control, solely for personal lawful use.
+            </p>
         </section>
 
         <section class="section">
             <h2>4. Paid App and Billing</h2>
-            <p>GhostMap is distributed as a paid application through Google Play.</p>
+            <p>
+                GhostMap is distributed as a paid application through Google Play.
+            </p>
             <ul>
                 <li>Purchase, payment processing, billing, and refund handling are managed by Google Play.</li>
                 <li>GhostMap does not directly process your payment card or bank details.</li>
@@ -98,13 +218,19 @@
 
         <section class="section">
             <h2>5. App Features and Device Requirements</h2>
-            <p>GhostMap provides profile-based input, overlay, and mapping-related features that may rely on local device capabilities and user-granted permissions.</p>
+            <p>
+                GhostMap provides profile-based input, overlay, and mapping-related features that may
+                rely on local device capabilities and user-granted permissions.
+            </p>
             <ul>
                 <li>Some features may require overlay-related access.</li>
-                <li>Some features may require advanced system access or compatible system behavior.</li>
+                <li>Some features may require Shizuku-related access or compatible system behavior.</li>
                 <li>Feature availability may vary by Android version, device model, ROM, or system configuration.</li>
+                <li><strong>Anti-Piracy & DRM:</strong> GhostMap requires a periodic internet connection to communicate securely with our servers. This is strictly for verifying your Google Play purchase license and validating device integrity to prevent unauthorized use.</li>
             </ul>
-            <p class="note">You are responsible for deciding whether to enable optional permissions and features on your device.</p>
+            <p class="note">
+                You are responsible for deciding whether to enable optional permissions and features on your device.
+            </p>
         </section>
 
         <section class="section">
@@ -115,12 +241,15 @@
                 <li>interferes with device security, platform integrity, or service availability</li>
                 <li>attempts to misuse, redistribute, resell, or sublicense the app except as permitted by law</li>
                 <li>removes or circumvents notices, technical protections, or attribution included with the app</li>
+                <li>modifies, bypasses, or tampers with the app's Digital Rights Management (DRM) or Play Integrity verification systems.</li>
             </ul>
         </section>
 
         <section class="section">
             <h2>7. User Data, Profiles, and Exports</h2>
-            <p>GhostMap stores configuration data, mappings, and related settings locally on your device.</p>
+            <p>
+                GhostMap stores configuration data, mappings, and related settings locally on your device.
+            </p>
             <ul>
                 <li>You are responsible for the profile content you create, import, export, or keep on your device.</li>
                 <li>Exported files stored outside app-private storage remain under your control and responsibility.</li>
@@ -130,53 +259,87 @@
 
         <section class="section">
             <h2>8. Third-Party Services and Platforms</h2>
-            <p>GhostMap may interact locally with Android system services, Google Play distribution services, and advanced local permission managers on the user's device.</p>
-            <p>GhostMap is not affiliated with, endorsed by, or sponsored by third-party game publishers, Android device manufacturers, or platform operators unless expressly stated.</p>
+            <p>
+                GhostMap may interact locally with Android system services, Google Play distribution services,
+                and Shizuku on the user's device.
+            </p>
+            <p>
+                GhostMap is not affiliated with, endorsed by, or sponsored by third-party game publishers,
+                Android device manufacturers, or platform operators unless expressly stated.
+            </p>
             
             <div class="card" style="border-color: var(--danger); margin-top: 16px; background: rgba(255, 107, 107, 0.05);">
                 <h3 style="color: var(--danger);">Important Disclaimer: Account Bans</h3>
-                <p>GhostMap is a general-purpose local utility. We do not encourage or support the violation of any third-party game's Terms of Service. <strong>You are solely responsible</strong> for how you utilize GhostMap within other applications.</p>
-                <p>If your use of GhostMap results in an account suspension, ban, or any other penalty in a third-party game or app, <span class="placeholder">BEAT</span> assumes <strong>no responsibility or liability</strong>. Use the tool entirely at your own risk.</p>
+                <p>
+                    GhostMap is a general-purpose local utility. We do not encourage or support the violation of any third-party game's Terms of Service. <strong>You are solely responsible</strong> for how you utilize GhostMap within other applications.
+                </p>
+                <p>
+                    If your use of GhostMap results in an account suspension, ban, or any other penalty in a third-party game or app, <strong>BEAT</strong> assumes <strong>no responsibility or liability</strong>. Use the tool entirely at your own risk.
+                </p>
             </div>
         </section>
 
         <section class="section">
             <h2>9. Updates and Availability</h2>
-            <p>GhostMap may be updated, modified, suspended, or discontinued at any time. We do not guarantee that every feature will remain available on every device, Android version, or future release.</p>
+            <p>
+                GhostMap may be updated, modified, suspended, or discontinued at any time.
+                We do not guarantee that every feature will remain available on every device,
+                Android version, or future release. We reserve the right to revoke access to the app if a user is found to be bypassing our licensing checks.
+            </p>
         </section>
 
         <section class="section">
             <h2>10. Disclaimer of Warranties</h2>
-            <p>To the maximum extent permitted by law, GhostMap is provided on an <code>AS IS</code> and <code>AS AVAILABLE</code> basis, without warranties of any kind, whether express, implied, or statutory, including implied warranties of merchantability, fitness for a particular purpose, non-infringement, accuracy, or uninterrupted availability.</p>
+            <p>
+                To the maximum extent permitted by law, GhostMap is provided on an <code>AS IS</code>
+                and <code>AS AVAILABLE</code> basis, without warranties of any kind, whether express,
+                implied, or statutory, including implied warranties of merchantability, fitness for a
+                particular purpose, non-infringement, accuracy, or uninterrupted availability.
+            </p>
         </section>
 
         <section class="section">
             <h2>11. Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, <span class="placeholder">BEAT</span> will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of data, device issues, lost profits, or business interruption arising from or related to your use of GhostMap.</p>
-            <p class="note">Nothing in these Terms excludes or limits liability where such exclusion or limitation is not allowed by applicable law.</p>
+            <p>
+                To the maximum extent permitted by law, <strong>BEAT</strong> will not be
+                liable for indirect, incidental, special, consequential, exemplary, or punitive damages,
+                or for loss of data, device issues, lost profits, or business interruption arising from or
+                related to your use of GhostMap.
+            </p>
+            <p class="note">
+                Nothing in these Terms excludes or limits liability where such exclusion or limitation is not allowed by applicable law.
+            </p>
         </section>
 
         <section class="section">
             <h2>12. Termination</h2>
-            <p>These Terms remain in effect until terminated.</p>
+            <p>
+                These Terms remain in effect until terminated.
+            </p>
             <ul>
                 <li>You may stop using GhostMap at any time by uninstalling it.</li>
-                <li>We may suspend or terminate your license to use GhostMap if you materially violate these Terms.</li>
+                <li>We may suspend or terminate your license to use GhostMap if you materially violate these Terms or fail our security and integrity checks.</li>
                 <li>Sections that by their nature should survive termination will continue to apply.</li>
             </ul>
         </section>
 
         <section class="section">
             <h2>13. Governing Law</h2>
-            <p>These Terms are governed by the laws of <span class="placeholder">VIETNAM</span>, without regard to conflict-of-law rules, except where mandatory consumer protection law in your place of residence applies.</p>
+            <p>
+                These Terms are governed by the laws of <strong>VIETNAM</strong>,
+                without regard to conflict-of-law rules, except where mandatory consumer protection law
+                in your place of residence applies.
+            </p>
         </section>
 
         <section class="section">
             <h2>14. Contact</h2>
-            <p>If you have questions about these Terms of Service, contact:</p>
+            <p>
+                If you have questions about these Terms of Service, contact:
+            </p>
             <div class="card">
-                <p><span class="placeholder">BEAT</span></p>
-                <p><span class="placeholder">kieukute2k4@gmail.com</span></p>
+                <p><strong>BEAT</strong></p>
+                <p>kieukute2k4@gmail.com</p>
             </div>
         </section>
     </div>
