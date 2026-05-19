@@ -196,7 +196,7 @@
                 <li>GhostMap does not sell user data.</li>
                 <li>GhostMap does not use advertising SDKs.</li>
                 <li>GhostMap does not transmit raw input events or the user’s app list to developer-operated services.</li>
-                <li>Some protected features may transmit limited verification data to Google Play and GhostMap verification services.</li>
+                <li>Some verification checks may transmit limited verification data to Google Play and related verification endpoints.</li>
             </ul>
             <p class="note">
                 GhostMap does access certain device and app data locally in order to provide overlay,
@@ -241,15 +241,17 @@
 
             <h3>3.4 License, integrity, and anti-abuse verification data</h3>
             <p>
-                When protected features are started, GhostMap may transmit limited verification data
-                to Google Play and GhostMap verification services to confirm purchase entitlement,
-                app integrity, and anti-abuse status.
+                GhostMap may perform limited verification checks with Google Play and related
+                verification endpoints to confirm purchase entitlement and app integrity status.
             </p>
             <p>
                 This verification data may include an installation identifier, app package name,
                 app version, signer digests, device key public key material, device attestation data
                 when available, a Google Play integrity token, and a hashed account hint when a
                 related feature uses one.
+            </p>
+            <p>
+                On some devices, Google Play Protect verification may be unavailable.
             </p>
 
             <h3>3.5 User-created configuration data</h3>
@@ -283,7 +285,7 @@
                 <li>rendering overlays, runtime controls, and editor interfaces</li>
                 <li>importing and exporting profile files</li>
                 <li>remembering app UI preferences such as theme and language</li>
-                <li>contacting Google Play and GhostMap verification services for purchase entitlement, app integrity, and anti-abuse checks</li>
+                <li>contacting Google Play and related verification endpoints for purchase entitlement and app integrity checks</li>
             </ul>
         </section>
 
@@ -296,12 +298,12 @@
                 to developer-operated services.
             </p>
             <p>
-                When protected features are started, GhostMap may transmit limited verification data to
-                Google Play and GhostMap verification services. This data may include an installation
+                GhostMap may transmit limited verification data to Google Play and related verification
+                endpoints. This data may include an installation
                 identifier, app package name, app version, signer digests, device key public key material,
                 device attestation data when available, a Google Play integrity token, and a hashed
                 account hint when a related feature uses one. This data is used only for purchase
-                entitlement, app integrity, security, and anti-abuse checks.
+                entitlement, app integrity, security, and related verification checks.
             </p>
             <p>
                 GhostMap also interacts locally with Android system services and the Shizuku service on the
@@ -323,9 +325,9 @@
                 <li>full payment credentials</li>
             </ul>
             <p>
-                GhostMap may also periodically contact Google Play and GhostMap verification services
-                to confirm purchase entitlement, app integrity, and anti-abuse status. These checks are
-                used only for licensing, security, and fraud prevention.
+                GhostMap may also periodically contact Google Play and related verification endpoints
+                to confirm purchase entitlement and app integrity status. These checks are used only
+                for licensing, security, and fraud prevention.
             </p>
             <p>
                 Google may process transaction-related data according to Google’s own policies and terms.
