@@ -17,7 +17,6 @@
             --muted: #aab7c7;
             --accent: #8fd9ff;
             --line: #283445;
-            --success: #38d9a9;
         }
 
         * {
@@ -133,6 +132,11 @@
             padding-left: 12px;
         }
 
+        .placeholder {
+            color: #ffe08f;
+            font-weight: 600;
+        }
+
         a {
             color: var(--accent);
         }
@@ -155,7 +159,7 @@
                 how long it is retained, and what choices users have.
             </p>
             <div class="meta">
-                <span class="chip">Last updated: April 13, 2026</span>
+                <span class="chip">Last updated: April 12, 2026</span>
                 <span class="chip">App: GhostMap</span>
                 <span class="chip">Distribution: Google Play</span>
                 <span class="chip">Business model: Paid app</span>
@@ -165,20 +169,21 @@
         <section class="section">
             <h2>1. Developer Information</h2>
             <p>
-                This Privacy Policy applies to GhostMap published by <strong>BEAT</strong>.
+                This Privacy Policy applies to GhostMap published by
+                <span class="placeholder">BEAT</span>.
             </p>
             <div class="grid">
                 <div class="card">
                     <h3>Developer</h3>
-                    <p>BEAT</p>
+                    <p><span class="placeholder">BEAT</span></p>
                 </div>
                 <div class="card">
                     <h3>Support Email</h3>
-                    <p>kieukute2k4@gmail.com</p>
+                    <p><span class="placeholder">kieukute2k4@gmail.com</span></p>
                 </div>
                 <div class="card">
                     <h3>Region</h3>
-                    <p>VIETNAM</p>
+                    <p><span class="placeholder">VIETNAM</span></p>
                 </div>
             </div>
         </section>
@@ -190,7 +195,8 @@
                 <li>GhostMap does not create user accounts.</li>
                 <li>GhostMap does not sell user data.</li>
                 <li>GhostMap does not use advertising SDKs.</li>
-                <li><strong>GhostMap securely connects to our servers exclusively to verify app licenses and device integrity, transmitting only anonymous cryptographic tokens.</strong></li>
+                <li>GhostMap does not transmit raw input events or the user’s app list to developer-operated services.</li>
+                <li>Some protected features may transmit limited verification data to Google Play and GhostMap verification services.</li>
             </ul>
             <p class="note">
                 GhostMap does access certain device and app data locally in order to provide overlay,
@@ -204,7 +210,7 @@
             <h3>3.1 Installed apps information</h3>
             <p>
                 GhostMap reads the list of launchable apps installed on the device so the user can
-                view apps, assign profiles to specific games or apps, and launch selected targets from within GhostMap.
+                view apps, assign profiles to selected apps, and launch selected targets from within GhostMap.
             </p>
             <p>
                 This may include app package names, app labels, and launcher icons.
@@ -222,20 +228,31 @@
                 <li>support overlay runtime features</li>
                 <li>inject local touch/input events through Shizuku-enabled system APIs</li>
             </ul>
-            
-            <div class="card" style="border-color: var(--success); margin-top: 12px; background: rgba(56, 217, 169, 0.05);">
-                <h3 style="color: var(--success);">Important Privacy Clarification</h3>
-                <p style="margin-bottom: 0;">
-                    <strong>GhostMap is NOT a keylogger or spyware.</strong> We do not monitor, record, or log your keystrokes outside of your active gameplay sessions. We do not capture your screen content or collect sensitive information such as passwords or personal messages. All input processing is performed <strong>100% locally</strong> on your device in real-time.
-                </p>
-            </div>
-            <h3 style="margin-top: 20px;">3.3 Overlay and runtime state</h3>
+            <p>
+                This processing is performed locally on the device while the relevant features are active.
+                GhostMap does not transmit raw input events to external services.
+            </p>
+
+            <h3>3.3 Overlay and runtime state</h3>
             <p>
                 GhostMap uses overlay windows and runtime state to display floating controls,
                 editor windows, runtime controls, profile UI, and related mapping interfaces.
             </p>
 
-            <h3>3.4 User-created configuration data</h3>
+            <h3>3.4 License, integrity, and anti-abuse verification data</h3>
+            <p>
+                When protected features are started, GhostMap may transmit limited verification data
+                to Google Play and GhostMap verification services to confirm purchase entitlement,
+                app integrity, and anti-abuse status.
+            </p>
+            <p>
+                This verification data may include an installation identifier, app package name,
+                app version, signer digests, device key public key material, device attestation data
+                when available, a Google Play integrity token, and a hashed account hint when a
+                related feature uses one.
+            </p>
+
+            <h3>3.5 User-created configuration data</h3>
             <p>GhostMap stores user-created and user-selected app data locally, including for example:</p>
             <ul>
                 <li>mapping profiles</li>
@@ -248,7 +265,7 @@
                 <li>active profile selections</li>
             </ul>
 
-            <h3>3.5 Import and export files chosen by the user</h3>
+            <h3>3.6 Import and export files chosen by the user</h3>
             <p>
                 If the user imports or exports profiles, GhostMap accesses only files explicitly chosen
                 by the user for import, or files created by GhostMap for export at the user’s request.
@@ -259,27 +276,36 @@
             <h2>4. How the Data Is Used</h2>
             <p>GhostMap uses accessed data only to provide app features requested by the user, including:</p>
             <ul>
-                <li>listing installed apps so profiles can be linked to games or apps</li>
+                <li>listing installed apps so profiles can be linked to selected apps</li>
                 <li>storing and loading profile and mapping configurations</li>
                 <li>reading local input events to execute configured mappings</li>
                 <li>injecting local input or touch events when enabled by the user</li>
                 <li>rendering overlays, runtime controls, and editor interfaces</li>
                 <li>importing and exporting profile files</li>
                 <li>remembering app UI preferences such as theme and language</li>
+                <li>contacting Google Play and GhostMap verification services for purchase entitlement, app integrity, and anti-abuse checks</li>
             </ul>
         </section>
 
         <section class="section">
-            <h2>5. Data Sharing & Remote Servers</h2>
+            <h2>5. Data Sharing</h2>
             <p>GhostMap does not sell or rent personal data.</p>
             <p>GhostMap does not share personal data with third parties for advertising or marketing.</p>
             <p>
-                <strong>License Verification:</strong> GhostMap communicates with our remote servers solely for digital rights management (DRM), specifically to verify Google Play purchase licenses and perform Play Integrity checks (anti-piracy). This process transmits only anonymous, Google-generated cryptographic tokens. We do not collect, transmit, or store your personal information, device identifiers, profiles, or input usage habits on our servers.
+                GhostMap does not transmit your raw input events or your list of launchable apps
+                to developer-operated services.
             </p>
             <p>
-                GhostMap does interact locally with Android system services, the Shizuku service on the
-                user’s device, and Google Play systems for app distribution and purchase processing.
-                These interactions are required for the app to function as intended.
+                When protected features are started, GhostMap may transmit limited verification data to
+                Google Play and GhostMap verification services. This data may include an installation
+                identifier, app package name, app version, signer digests, device key public key material,
+                device attestation data when available, a Google Play integrity token, and a hashed
+                account hint when a related feature uses one. This data is used only for purchase
+                entitlement, app integrity, security, and anti-abuse checks.
+            </p>
+            <p>
+                GhostMap also interacts locally with Android system services and the Shizuku service on the
+                user’s device. These interactions are required for the app to function as intended.
             </p>
         </section>
 
@@ -296,6 +322,11 @@
                 <li>bank account details</li>
                 <li>full payment credentials</li>
             </ul>
+            <p>
+                GhostMap may also periodically contact Google Play and GhostMap verification services
+                to confirm purchase entitlement, app integrity, and anti-abuse status. These checks are
+                used only for licensing, security, and fraud prevention.
+            </p>
             <p>
                 Google may process transaction-related data according to Google’s own policies and terms.
                 Users should review Google Play’s and Google’s privacy terms for payment-related processing.
@@ -340,13 +371,17 @@
             </p>
             <p>
                 No system can be guaranteed to be absolutely secure, but GhostMap is designed to limit data
-                exposure by keeping all processing local and using industry-standard HTTPS protocols for license verification tokens.
+                exposure by avoiding unnecessary remote transmission in the current version.
+            </p>
+            <p>
+                GhostMap may embed build watermarking, signer validation, integrity checks, and anti-tamper
+                markers to help detect unauthorized modification, redistribution, or abuse of the app.
             </p>
         </section>
 
         <section class="section">
             <h2>9. Children</h2>
-            <p>GhostMap is not directed to children under the age of 13.</p>
+            <p>GhostMap is not directed to children.</p>
         </section>
 
         <section class="section">
@@ -376,10 +411,10 @@
             <p>
                 If you have questions about this Privacy Policy, contact:
             </p>
-            <div class="card">
-                <p style="margin-bottom: 5px;"><strong>BEAT</strong></p>
-                <p style="margin-bottom: 0;">kieukute2k4@gmail.com</p>
-            </div>
+            <p>
+                <strong class="placeholder">BEAT</strong><br />
+                <span class="placeholder">kieukute2k4@gmail.com</span>
+            </p>
         </section>
     </div>
 </body>
