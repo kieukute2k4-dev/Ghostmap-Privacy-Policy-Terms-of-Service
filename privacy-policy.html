@@ -6,7 +6,7 @@
     <title>GhostMap Privacy Policy</title>
     <meta
         name="description"
-        content="Privacy Policy for GhostMap, a paid Android app distributed through Google Play." />
+        content="Privacy Policy for GhostMap, an Android app with Google Play Billing unlock options." />
     <style>
         :root {
             color-scheme: dark;
@@ -17,6 +17,7 @@
             --muted: #aab7c7;
             --accent: #8fd9ff;
             --line: #283445;
+            --success: #38d9a9; /* Bổ sung màu xanh lá cho phần cam kết */
         }
 
         * {
@@ -159,10 +160,10 @@
                 how long it is retained, and what choices users have.
             </p>
             <div class="meta">
-                <span class="chip">Last updated: April 12, 2026</span>
+                <span class="chip">Last updated: June 4, 2026</span>
                 <span class="chip">App: GhostMap</span>
                 <span class="chip">Distribution: Google Play</span>
-                <span class="chip">Business model: Paid app</span>
+                <span class="chip">Business model: Google Play Billing unlocks</span>
             </div>
         </section>
 
@@ -196,7 +197,8 @@
                 <li>GhostMap does not sell user data.</li>
                 <li>GhostMap does not use advertising SDKs.</li>
                 <li>GhostMap does not transmit raw input events or the user’s app list to developer-operated services.</li>
-                <li>Some verification checks may transmit limited verification data to Google Play and related verification endpoints.</li>
+                <li>GhostMap uses Google Play Billing for subscription and one-time lifetime unlock options.</li>
+                <li>Some Billing, entitlement, license, and integrity checks may transmit limited verification data to Google Play and GhostMap verification services.</li>
             </ul>
             <p class="note">
                 GhostMap does access certain device and app data locally in order to provide overlay,
@@ -210,7 +212,7 @@
             <h3>3.1 Installed apps information</h3>
             <p>
                 GhostMap reads the list of launchable apps installed on the device so the user can
-                view apps, assign profiles to selected apps, and launch selected targets from within GhostMap.
+                view apps, assign profiles to specific games or apps, and launch selected targets from within GhostMap.
             </p>
             <p>
                 This may include app package names, app labels, and launcher icons.
@@ -228,12 +230,14 @@
                 <li>support overlay runtime features</li>
                 <li>inject local touch/input events through Shizuku-enabled system APIs</li>
             </ul>
-            <p>
-                This processing is performed locally on the device while the relevant features are active.
-                GhostMap does not transmit raw input events to external services.
-            </p>
-
-            <h3>3.3 Overlay and runtime state</h3>
+            
+            <div class="card" style="border-color: var(--success); margin-top: 12px; background: rgba(56, 217, 169, 0.05);">
+                <h3 style="color: var(--success);">Important Privacy Clarification</h3>
+                <p style="margin-bottom: 0;">
+                    <strong>GhostMap is NOT a keylogger or spyware.</strong> We do not monitor, record, or log your keystrokes outside of your active gameplay sessions. We do not capture your screen content or collect sensitive information such as passwords or personal messages. All input processing is performed <strong>100% locally</strong> on your device in real-time.
+                </p>
+            </div>
+            <h3 style="margin-top: 20px;">3.3 Overlay and runtime state</h3>
             <p>
                 GhostMap uses overlay windows and runtime state to display floating controls,
                 editor windows, runtime controls, profile UI, and related mapping interfaces.
@@ -241,14 +245,20 @@
 
             <h3>3.4 License, integrity, and anti-abuse verification data</h3>
             <p>
-                GhostMap may perform limited verification checks with Google Play and related
-                verification endpoints to confirm purchase entitlement and app integrity status.
+                GhostMap may perform limited verification checks with Google Play and GhostMap
+                verification services to confirm purchase entitlement and app integrity status.
             </p>
             <p>
                 This verification data may include an installation identifier, app package name,
                 app version, signer digests, device key public key material, device attestation data
                 when available, a Google Play integrity token, and a hashed account hint when a
                 related feature uses one.
+            </p>
+            <p>
+                When a Google Play unlock is present, verification may also include Google Play
+                Billing product ID, product type, purchase token, purchase state, acknowledgement
+                status, purchase time, and entitlement expiry returned by verification services.
+                GhostMap does not receive full payment credentials.
             </p>
             <p>
                 On some devices, Google Play Protect verification may be unavailable.
@@ -278,14 +288,14 @@
             <h2>4. How the Data Is Used</h2>
             <p>GhostMap uses accessed data only to provide app features requested by the user, including:</p>
             <ul>
-                <li>listing installed apps so profiles can be linked to selected apps</li>
+                <li>listing installed apps so profiles can be linked to games or apps</li>
                 <li>storing and loading profile and mapping configurations</li>
                 <li>reading local input events to execute configured mappings</li>
                 <li>injecting local input or touch events when enabled by the user</li>
                 <li>rendering overlays, runtime controls, and editor interfaces</li>
                 <li>importing and exporting profile files</li>
                 <li>remembering app UI preferences such as theme and language</li>
-                <li>contacting Google Play and related verification endpoints for purchase entitlement and app integrity checks</li>
+                <li>contacting Google Play and GhostMap verification services for purchase entitlement and app integrity checks</li>
             </ul>
         </section>
 
@@ -298,26 +308,37 @@
                 to developer-operated services.
             </p>
             <p>
-                GhostMap may transmit limited verification data to Google Play and related verification
-                endpoints. This data may include an installation
-                identifier, app package name, app version, signer digests, device key public key material,
-                device attestation data when available, a Google Play integrity token, and a hashed
-                account hint when a related feature uses one. This data is used only for purchase
-                entitlement, app integrity, security, and related verification checks.
+                GhostMap may transmit limited verification data to Google Play and GhostMap verification
+                services. This data may include an installation identifier, app package name, app version,
+                signer digests, device key public key material, device attestation data when available,
+                a Google Play integrity token, a hashed account hint when a related feature uses one,
+                Google Play Billing product ID, product type, purchase token, purchase state,
+                acknowledgement status, purchase time, and entitlement expiry returned by verification
+                services. This data is used only for purchase entitlement, app integrity, security,
+                anti-abuse, and related verification checks.
             </p>
             <p>
-                GhostMap also interacts locally with Android system services and the Shizuku service on the
-                user’s device. These interactions are required for the app to function as intended.
+                GhostMap does interact locally with Android system services, the Shizuku service on the
+                user’s device, and Google Play systems for app distribution and purchase processing.
+                These interactions are required for the app to function as intended.
             </p>
         </section>
 
         <section class="section">
             <h2>6. Payments and Billing</h2>
-            <p>GhostMap is a paid app distributed through Google Play.</p>
+            <p>
+                GhostMap offers Google Play Billing unlock options, which may include auto-renewing
+                subscriptions and a one-time lifetime unlock.
+            </p>
             <p>
                 Any app purchase, payment processing, billing, refund handling, or transaction processing
                 is handled by Google Play, not directly by GhostMap.
             </p>
+            <ul>
+                <li>Subscriptions remain usable while active under Google Play. If canceled, access may continue until the current paid period expires. If a subscription expires, is refunded, revoked, or otherwise invalidated, access may stop.</li>
+                <li>The lifetime unlock is a one-time in-app product that may be restored through Google Play while it remains valid.</li>
+                <li>Available products, prices, renewals, cancellations, taxes, and refund options are shown and managed by Google Play.</li>
+            </ul>
             <p>GhostMap does not collect, store, or process:</p>
             <ul>
                 <li>payment card numbers</li>
@@ -325,9 +346,15 @@
                 <li>full payment credentials</li>
             </ul>
             <p>
-                GhostMap may also periodically contact Google Play and related verification endpoints
-                to confirm purchase entitlement and app integrity status. These checks are used only
-                for licensing, security, and fraud prevention.
+                GhostMap may store limited purchase state locally, including product ID, product type,
+                purchase token, purchase state, acknowledgement status, purchase time, and entitlement
+                expiry. This local record is used to display unlock status, restore purchases, and request
+                entitlement verification.
+            </p>
+            <p>
+                GhostMap may also periodically contact Google Play and GhostMap verification services
+                to confirm subscription or lifetime unlock entitlement and app integrity status. These
+                checks are used only for licensing, security, anti-abuse, and fraud prevention.
             </p>
             <p>
                 Google may process transaction-related data according to Google’s own policies and terms.
@@ -375,15 +402,11 @@
                 No system can be guaranteed to be absolutely secure, but GhostMap is designed to limit data
                 exposure by avoiding unnecessary remote transmission in the current version.
             </p>
-            <p>
-                GhostMap may embed build watermarking, signer validation, integrity checks, and anti-tamper
-                markers to help detect unauthorized modification, redistribution, or abuse of the app.
-            </p>
         </section>
 
         <section class="section">
             <h2>9. Children</h2>
-            <p>GhostMap is not directed to children.</p>
+            <p>GhostMap is not directed to children under the age of 13.</p>
         </section>
 
         <section class="section">
@@ -413,10 +436,10 @@
             <p>
                 If you have questions about this Privacy Policy, contact:
             </p>
-            <p>
-                <strong class="placeholder">BEAT</strong><br />
-                <span class="placeholder">kieukute2k4@gmail.com</span>
-            </p>
+            <div class="card">
+                <p style="margin-bottom: 5px;"><strong class="placeholder">BEAT</strong></p>
+                <p style="margin-bottom: 0;"><span class="placeholder">kieukute2k4@gmail.com</span></p>
+            </div>
         </section>
     </div>
 </body>
